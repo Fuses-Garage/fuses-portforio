@@ -1,0 +1,14 @@
+.navlink-active {
+    background-color: var(--mantine-primary-color-filled);
+    color: #ffffff;
+}
+
+.navlink {
+    transition: background-color 200ms;
+    color: #888;
+}
+
+.navlink:hover {
+    background-color: var(--mantine-primary-color-light-hover);
+    color: var(--mantine-primary-color-filled);
+}

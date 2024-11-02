@@ -1,0 +1,123 @@
+export type Category = "Wear" | "Prop" | "Item" | "Gimmick" | "Other"
+export type Product = {
+    name: string,
+    category: Category
+    tag: string[]
+    link: string
+    desc: string
+    sumnail: string
+    release: Date
+    price: number
+}
+export const Products: Product[] = [
+    {
+        name: "メルヘン☆モーニングスター",
+        category: "Item",
+        tag: ["武器", "かわいい・メルへン"],
+        link: "https://fusesgarage.booth.pm/items/5365523",
+        desc: "クリスマスへの憎しみを込めて作ったメルヘンなモーニングスターです。FBX形式で、様々なことに使えます。",
+        sumnail: "morning_star.jpg",
+        release: new Date("2023/12/23"),
+        price: 0,
+    },
+    {
+        name: "3D小道具「溶岩の槌斧」",
+        category: "Item",
+        tag: ["武器", "ファンタジー"],
+        link: "https://store.vket.com/ja/items/9353",
+        desc: "火山から採取される不思議な鉱石から作られた槌と斧、普段は黒い色をしているが魔力を込めると赤熱する性質がある。持ち手部分には耐熱性の高い火竜のうろこを使用しました。",
+        sumnail: "lava_weapon.jpg",
+        release: new Date("2024/03/03"),
+        price: 150,
+    },
+    {
+        name: "回復アイテム3Dモデル4点セット",
+        category: "Prop",
+        tag: ["小物", "ファンタジー"],
+        link: "https://store.vket.com/ja/items/9354",
+        desc: "ファンタジー風世界観の回復アイテムたちのローポリモデルです。グレードの違うポーション3種と薬草の3Dモデルが入っています。ゲームの開発やイラストの参考などにご利用ください。（注:マテリアル・テクスチャは付属していません）",
+        sumnail: "healing_kit.jpg",
+        release: new Date("2024/05/06"),
+        price: 150,
+    },
+    {
+        name: "Udonで回る！Fuse式コンパスギミック",
+        category: "Gimmick",
+        tag: ["ワールドギミック"],
+        link: "https://fusesgarage.booth.pm/items/5873632",
+        desc: "VRChatのワールド内に配置するためのコンパスです。特定の座標を指したり特定の方位を指したりの設定をエディタ拡張で簡単に行うことができます。また、針のトランスフォームを自由に指定できるので他のコンパスのモデルも回すことができます。",
+        sumnail: "compass.jpg",
+        release: new Date("2024/07/01"),
+        price: 100,
+    },
+    {
+        name: "魔水晶の杖",
+        category: "Prop",
+        tag: ["小物", "武器", "ファンタジー"],
+        link: "https://store.vket.com/ja/items/9351",
+        desc: "序盤の村で売ってそうな木製の魔法の杖と魔法陣が描かれた消しゴムです。マテリアルは杖本体、持ち手にまかれた布、宝石部分の3枠です。QvPenの差し替えモデルとしても使用できます。",
+        sumnail: "wandpen.jpg",
+        release: new Date("2024/08/04"),
+        price: 150,
+    },
+    {
+        name: "魔王の剣+アクセサリーキット計4点",
+        category: "Wear",
+        tag: ["アクセサリー", "武器", "ファンタジー"],
+        link: "https://store.vket.com/ja/items/9352",
+        desc: "ラスボスっぽい感じの王冠、ブローチ、角、剣の4セットです。剣には振る勢いに応じて軌跡エフェクトが出るギミックがついています。",
+        sumnail: "demonic.jpg",
+        release: new Date("2024/09/01"),
+        price: 300,
+    },
+    {
+        name: "星雲時計",
+        category: "Wear",
+        tag: ["アクセサリー", "腕時計", "宇宙"],
+        link: "https://fusesgarage.booth.pm/items/6076994",
+        desc: "文字盤に星空が浮かび上がる腕時計です。",
+        sumnail: "clock.jpg",
+        release: new Date("2024/09/06"),
+        price: 100,
+    },
+    {
+        name: "煌星のヘイロー",
+        category: "Wear",
+        tag: ["アクセサリー", "ヘイロー", "ファンタジー"],
+        link: "https://fusesgarage.booth.pm/items/6090947",
+        desc: "星のビットがあたりを上下しながら回るヘイローです。シェイプキーで変形させたり太さを変えることができます。回転速度はEXメニューから調整できます。また、ふわふわな翼も付属しています。",
+        sumnail: "halo.jpg",
+        release: new Date("2024/09/11"),
+        price: 100,
+    },
+    {
+        name: "蒸気式回転鋸",
+        category: "Item",
+        tag: ["武器", "スチームパンク"],
+        link: "https://store.vket.com/ja/items/9342",
+        desc: "蒸気の力で回る回転鋸です。EXメニューから背負う、手に持つの切り替えやパワー（回転速度や煙の量に影響します）の変更などを行えます。また、ノコギリが何かにぶつかると火花のパーティクルが発生します。",
+        sumnail: "saw1.png",
+        release: new Date("2024/10/14"),
+        price: 200,
+    },
+    {
+        name: "重騎士の剣盾",
+        category: "Item",
+        tag: ["武器", "ファンタジー"],
+        link: "https://store.vket.com/ja/items/9369",
+        desc: "重騎士っぽい剣と大楯のセットです。EXメニューから背負う、手に持つの切り替えやパワー（回転速度や煙の量に影響します）の変更などを行えます。また、個別での装着も可能です。",
+        sumnail: "knight1.png",
+        release: new Date("2024/10/25"),
+        price: 200,
+    },
+    {
+        name: "魔法弾の銃剣",
+        category: "Item",
+        tag: ["武器", "ファンタジー"],
+        link: "https://store.vket.com/ja/items/9370",
+        desc: "魔力を込めた銃弾を放てる銃剣です。リロード、排莢のギミック付きです。効果音と炎、氷、雷それぞれの弾丸、着弾エフェクトが付属してます。この商品のテクスチャにはInstaMATを使用しています。",
+        sumnail: "gun1.png",
+        release: new Date("2024/10/25"),
+        price: 400,
+    },
+]

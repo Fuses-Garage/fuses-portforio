@@ -1,42 +1,53 @@
-import { AppShell, Burger, Group, Anchor, Image } from '@mantine/core';
+import { AppShell, Burger, Group, Image, Flex, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import logo from "../assets/logo.svg"
+import NavigateButton from '../Components/NavigateButton';
+import NavigateButtonSide from '../Components/NavigateButtonSide';
+import { Outlet } from 'react-router-dom';
 
 export function AppLayout() {
     const [opened, { toggle }] = useDisclosure();
 
     return (
         <AppShell
-            header={{ height: 90 }}
+            header={{ height: 45 }}
             navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
             padding="md"
         >
             <AppShell.Header>
-                <Group h="100%" px="md">
-                    <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size={45} />
-                    <Group justify="space-between" style={{ flex: 1 }}>
-                        <Image w={90} h={90} src={logo} />
-                        <Group ml="xl" gap={0} visibleFrom="sm">
-                            <Anchor >Home</Anchor>
-                            <Anchor >Blog</Anchor>
-                            <Anchor >Contacts</Anchor>
-                            <Anchor >Support</Anchor>
+                <Group h="100%" px="md" bg={"#444"}>
+                    <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size={20} />
+                    <Group h={"100%"} justify="space-between" style={{ flex: 1 }}>
+                        <Group>
+                            <Image w={90} h={45} src={logo} />
+                            <Text fz={24} fw={700} c={"#ffffff"} ff={"orbitron"}>Fuse's Site</Text>
+
                         </Group>
+                        <Flex ml="xl" h={"100%"} gap={0} visibleFrom="sm">
+                            <NavigateButton href='/' text='TOP' />
+                            <NavigateButton href='/about' text='ABOUT' />
+                            <NavigateButton href='/product' text='PRODUCT' />
+                            <NavigateButton href='/works' text='WORKS' />
+                        </Flex>
                     </Group>
                 </Group>
             </AppShell.Header>
 
             <AppShell.Navbar py="md" px={4}>
-                <Anchor >Home</Anchor>
-                <Anchor >Blog</Anchor>
-                <Anchor >Contacts</Anchor>
-                <Anchor >Support</Anchor>
+                <NavigateButtonSide href='/' text='TOP' />
+                <NavigateButtonSide href='/about' text='ABOUT' />
+                <NavigateButtonSide href='/product' text='PRODUCT' />
+                <NavigateButtonSide href='/works' text='WORKS' />
             </AppShell.Navbar>
 
             <AppShell.Main bg={"#ccc"}>
-                Navbar is only visible on mobile, links that are rendered in the header on desktop are
-                hidden on mobile in header and rendered in navbar instead.
+                <Outlet />
             </AppShell.Main>
+            <AppShell.Footer bg={"#444"} c={"#fff"}>
+                <Text ta={"right"} p={4}>
+                    &copy;Fuse's Garage
+                </Text>
+            </AppShell.Footer>
         </AppShell>
     );
 }
