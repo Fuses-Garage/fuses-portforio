@@ -10,7 +10,7 @@ const ProductModal = (props: Props) => {
     return (
         <ModalRoot maw={"500"} opened={props.opened} onClose={props.onClose}>
             <ModalOverlay />
-            <ModalContent shadow="sm" p="lg" radius="md" h={"100%"}>
+            <ModalContent shadow="sm" p="lg" radius="md" >
                 <ModalBody>
                     <Stack justify="space-between" h={"100%"}>
                         <Stack align='center'>

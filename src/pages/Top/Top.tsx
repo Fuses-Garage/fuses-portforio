@@ -21,7 +21,7 @@ const Top = () => {
                         </Flex>
                         <Collapse in={opened}>
                             <List>
-                                <ListItem>2024/11/04 公開</ListItem>
+                                <ListItem>2024/11/03 公開</ListItem>
                             </List>
                         </Collapse>
                     </Paper>

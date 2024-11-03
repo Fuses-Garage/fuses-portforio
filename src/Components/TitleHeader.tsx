@@ -10,7 +10,7 @@ const TItleHeader = (props: Props) => {
     return (
         <Flex align={"center"} gap={16} mb={40}>
             <Box h={2} w={32} bg={"#000000"} />
-            <Flex direction={isSP ? "column" : "row"}>
+            <Flex direction={isSP ? "column" : "row"} align={isSP ? "flex-start" : "center"}>
                 <Title fz={48} ff={"orbitron"}>{props.text}</Title>
                 <Text fz={32}>{props.jp}</Text>
             </Flex>

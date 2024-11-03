@@ -41,7 +41,7 @@ const About = () => {
                             <Text>クリックで開閉</Text>
                         </Flex>
                         <Collapse in={openedL}>
-                            <List>
+                            <List p={8}>
                                 <ListItem>UNREAL ENGINE4を使った簡単なゲームの作成</ListItem>
                                 <ListItem>Unityを使った簡単なゲームの作成</ListItem>
                                 <ListItem>Blenderを使った小物や家具、武器などの3Dモデルの作成</ListItem>

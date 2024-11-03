@@ -40,7 +40,7 @@ export function AppLayout() {
                 <NavigateButtonSide href='/works' text='WORKS' />
             </AppShell.Navbar>
 
-            <AppShell.Main bg={"#ccc"}>
+            <AppShell.Main className='bg'>
                 <Outlet />
             </AppShell.Main>
             <AppShell.Footer bg={"#444"} c={"#fff"}>
