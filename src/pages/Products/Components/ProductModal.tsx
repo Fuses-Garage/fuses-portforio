@@ -16,7 +16,7 @@ const ProductModal = (props: Props) => {
                         <Stack align='center'>
                             <Image
                                 maw={320}
-                                src={`/product_sumnails/${props.product?.sumnail}`}
+                                src={`${import.meta.env.BASE_URL}product_sumnails/${props.product?.sumnail}`}
                                 alt="Norway"
                             />
 

@@ -20,7 +20,7 @@ const ProductPage = () => {
                     filtered.map((e, i) => {
                         return (
                             <GridCol span={isSP ? 6 : 3} p={0} key={i}>
-                                <BackgroundImage component="image" style={{ aspectRatio: 1 }} pt={0} h={"auto"} w={"100%"} src={`/product_sumnails/${e.sumnail}`}>
+                                <BackgroundImage component="image" style={{ aspectRatio: 1 }} pt={0} h={"auto"} w={"100%"} src={`${import.meta.env.BASE_URL}product_sumnails/${e.sumnail}`}>
                                     <Stack h={"100%"} justify="space-between" onClick={() => { setProduct(e); open() }}>
                                         <Flex direction={isSP ? "column" : "row"} justify={"space-between"} bg={"#000000CC"} align={isSP ? "flex-start" : "center"}>
                                             <Text c={"#fff"} fz={16}>{e.name}</Text>

@@ -7,7 +7,7 @@ import WorksPage from "./pages/Works/Works";
 import NotFound from "./pages/404/NotFound";
 
 const Router = () => (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
             <Route path="/" element={<AppLayout />}>
                 <Route path="/" element={<Top />} />

@@ -1,11 +1,13 @@
 .navlink-active {
     background-color: var(--mantine-primary-color-filled);
     color: #ffffff;
+    cursor: pointer;
 }
 
 .navlink {
     transition: background-color 200ms;
     color: #888;
+    cursor: pointer;
 }
 
 .navlink:hover {
