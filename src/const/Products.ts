@@ -120,4 +120,14 @@ export const Products: Product[] = [
         release: new Date("2024/10/25"),
         price: 400,
     },
+    {
+        name: "アッシュウッドの杖",
+        category: "Item",
+        tag: ["武器", "ファンタジー", "杖"],
+        link: "https://store.vket.com/ja/items/9647",
+        desc: "火球を放てる灰色の木製の杖です。おしゃれな帽子もついてきます。火球単体でも動作するため口や手から放つこともできます。",
+        sumnail: "AshWand.png",
+        release: new Date("2024/11/29"),
+        price: 450,
+    },
 ]
