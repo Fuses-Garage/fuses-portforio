@@ -24,6 +24,13 @@ export default function RootLayout({
         <Suspense>
           <ColorSchemeScript />
         </Suspense>
+        <meta charSet="UTF-8" />
+        <meta property="og:title" content="Fuse's Site" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fuses-garage.github.io/fuses-portforio/" />
+        <meta property="og:image" content="https://fuses-garage.github.io/fuses-portforio/OGP.png" />
+        <meta property="og:description" content="個人クリエイターFuseのポートフォリオです。" />
+        <meta property="og:site_name" content="Fuse's Site" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
       </head>
       <body>
