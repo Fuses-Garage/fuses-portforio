@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 export default async function ProductPage({ params, }: { params: Promise<{ id: string }> }) {
     const id = (await params).id
     const safeID = Number.parseInt(id) ?? 0
-    const elem = Products[safeID]
+    const elem = Products.find(e => e.id == safeID) ?? Products[0]
     return (
         <Paper p={"24px 32px"}>
             <TitleHeader text="PRODUCT" jp="商品" />
