@@ -12,6 +12,7 @@ const UpdateHistory = () => {
             <Collapse in={opened}>
                 <List>
                     <ListItem>2024/11/03 公開</ListItem>
+                    <ListItem>2024/12/16 リニューアル+新商品追加</ListItem>
                 </List>
             </Collapse>
         </Paper>

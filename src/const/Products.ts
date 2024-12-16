@@ -166,4 +166,16 @@ export const Products: Product[] = [
         release: new Date("2024/12/04"),
         price: 750,
     },
+    {
+        id: 13,
+        name: "【MA対応】外付け式リミッターロッド",
+        category: "Wear",
+        tag: ["アクセサリー", "サイバー", "リミッター"],
+        link_vket: "https://store.vket.com/ja/items/9736",
+        link_booth: "https://fusesgarage.booth.pm/items/6383133",
+        desc: "EXメニューから出し入れできるリミッターロッドです。武器や背中につけるといい感じになります。",
+        sumnail: "limitter0.png",
+        release: new Date("2024/12/16"),
+        price: 150,
+    },
 ]
